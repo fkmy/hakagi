@@ -20,9 +20,9 @@ func FormatSql(constraints []constraint.Constraint) string {
 		var q string
 		if len(c.Table) >= 57 {
 			fk_name := c.Table[:57] + "_ibfk_" + strconv.Itoa(i)
-			q := fmt.Sprintf(customSql, c.Table, fk_name, c.Column, c.ReferedTable, c.ReferedColumn)
+			q = fmt.Sprintf(customSql, c.Table, fk_name, c.Column, c.ReferedTable, c.ReferedColumn)
 		} else {
-			q := fmt.Sprintf(baseSql, c.Table, c.Column, c.ReferedTable, c.ReferedColumn)
+			q = fmt.Sprintf(baseSql, c.Table, c.Column, c.ReferedTable, c.ReferedColumn)
 		}
 
 		queries = append(queries, q)
