@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"github.com/jinzhu/inflection"
-	"github.com/syucream/hakagi/src/constraint"
-	"github.com/syucream/hakagi/src/database"
+	"github.com/fkmy/hakagi/src/constraint"
+	"github.com/fkmy/hakagi/src/database"
 )
 
 const (

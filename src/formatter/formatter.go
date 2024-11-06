@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/syucream/hakagi/src/constraint"
+	"github.com/fkmy/hakagi/src/constraint"
 )
 
 const (
