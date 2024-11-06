@@ -4,14 +4,14 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.11.1-stretch
-    working_directory: /go/src/github.com/syucream/hakagi
+    working_directory: /go/src/github.com/fkmy/hakagi
     steps:
       - checkout
       - run: make dep cmd
   test:
     docker:
       - image: circleci/golang:1.11.1-stretch
-    working_directory: /go/src/github.com/syucream/hakagi
+    working_directory: /go/src/github.com/fkmy/hakagi
     steps:
       - checkout
       - run: make dep test
